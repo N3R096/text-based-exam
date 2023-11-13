@@ -39,7 +39,7 @@ class Creature {
     constructor(name) {
       super(name, "animal", "grey", 115,115, 5, 2, 1, 8, 13, 1, 1, 2,false,13);
       this.techniques = [  
-      "Attack"]
+      "Attack","Slash","Bite"]
     }
   }
   
@@ -48,7 +48,7 @@ class Creature {
       super(name, "Alpha animal", "grey", 175,175, 8, 4, 1, 10, 18, 1, 3, 4,false,18);
       this.techniques = 
         //1: "Bite",
-      [  "Attack",
+      [  "Attack","Slash","Bite"
          ]
         //4: "Howl",
         //5: "RulerS_Howl"

@@ -28,32 +28,65 @@ function Attack (target_, attacker_,index,order_,byPlayer_selectedTarget,Attacki
   }
 
   console.log("Attack starts here ")  
-  if (attacker_.playableChar) {console.log(("trolololol"))
+  if (attacker_.playableChar) {
 console.log( `>>>>>>>>>>>>>>><
 `,attacker_.name,`attacked`,target_.name,`>>>>>>>>>>>>>>>>>>>>><<<<<<`)
 target_.HP-=60
-console.log(target_)} 
+} 
 
   
 } 
 
    ////////////////////////////////////////////////////////////////////)
-   function Bite (target_, attacker_,order_ ){
+   function Bite (target_, attacker_,index,order_,byPlayer_selectedTarget,Attacking_Player ){
     if(target_.playableChar===true){
-      target_.health_head-=0;
-      target_.health_body-= 30;
-      target_.health_leftArm-= 0;
-      target_.health_rightArm-=0;
-      target_.health_leftLeg-= 0;
-      target_.health_rightLeg-=0;
-      console.log(target_)
-      console.log("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo")}
+      target_.health_head-=10;
+      target_.health_body-= 10;
+      target_.health_leftArm-= 10;
+      target_.health_rightArm-=10;
+      target_.health_leftLeg-= 10;
+      target_.health_rightLeg-=10;
+      console.log(target_.currentHealth,target_.name)
+      
+    }
   
     console.log("Attack starts here ")  
-    if (attacker_.playableChar) {console.log(("trolololol"))} 
+    if (attacker_.playableChar) {
+  console.log( `>>>>>>>>>>>>>>><
+  `,attacker_.name,`attacked`,target_.name,`>>>>>>>>>>>>>>>>>>>>><<<<<<`)
+  target_.HP-=70
+  } 
   
     
   } 
+
+
+
+
+
+  /////////////////////////////////////////
+  function Slash (target_, attacker_,index,order_,byPlayer_selectedTarget,Attacking_Player ){
+    if(target_.playableChar===true){
+      target_.health_head-=10;
+      target_.health_body-= 10;
+      target_.health_leftArm-= 10;
+      target_.health_rightArm-=10;
+      target_.health_leftLeg-= 10;
+      target_.health_rightLeg-=10;
+      console.log(target_.currentHealth,target_.name)
+      
+    }
+  
+    console.log("Attack starts here ")  
+    if (attacker_.playableChar) {
+  console.log( `>>>>>>>>>>>>>>><
+  `,attacker_.name,`attacked`,target_.name,`>>>>>>>>>>>>>>>>>>>>><<<<<<`)
+  target_.HP-=60
+  } 
+  
+    
+  } 
+
    ////////////////////////////////////////////////////////////////////)
 
 
@@ -93,6 +126,8 @@ console.log(target_)}
   module.exports={
     Normal_Attack,
       Attack,
+      Bite,
+      Slash,
     
     
   }

@@ -99,7 +99,7 @@ let playerCharacter = {
     full_Inventory_weight:170,
     used_Inventory_weight:0,
     
-     Techniques:["Attack"],
+     Techniques:["Attack","Slash","Bite"],
 
 
 

@@ -67,7 +67,7 @@ let assistance_Character = {
     Wisdom: 10,
     Luck: 10,
     
-   Techniques:["Attack"],
+   Techniques:["Attack","Slash","Bite"],
    Spells:["FireBall","Healing"],
    playableChar:true,
     //battle condition
