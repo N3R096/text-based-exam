@@ -481,6 +481,7 @@ function activeBattle() {
   ) {
     if (enemy_team.length === 0) {
 leveling.lvlUp
+console.table(party.TEAM_Character)
       break;
     }
     if (player_team.length === 0) {
@@ -521,7 +522,7 @@ ${player_team.map((player) =>
         "-----------------------------------------------------------"
       );
       techniques[selected_attack](chosen_target, attacker);
-
+console.log(selected_attack,"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
       if (chosen_target.currentHealth === 0) {
         console.log(
           ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
@@ -564,7 +565,7 @@ ${player_team.map((player) =>
 
         console.log(enemy_team);
         techniques.Attack(target, attacker);
-        console.log(ui_battle1, `asdlkjfdbguah`);
+       
         if (target.HP <= 0) {
           attacker.exp += target.exp_given;
           console.log(attacker)

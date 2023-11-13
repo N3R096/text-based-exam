@@ -50,7 +50,7 @@ target_.HP-=60
       
     }
   
-    console.log("Attack starts here ")  
+    console.log("Attack by monster starts here ")  
     if (attacker_.playableChar) {
   console.log( `>>>>>>>>>>>>>>><
   `,attacker_.name,`attacked`,target_.name,`>>>>>>>>>>>>>>>>>>>>><<<<<<`)

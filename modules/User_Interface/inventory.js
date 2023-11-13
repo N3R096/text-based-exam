@@ -38,8 +38,7 @@ function addItem_toInventory(item, amount) {
 function use_item(obj,playerCharacter){
   console.log(playerCharacter_Inventory)
 // const decreaseAmount = playerCharacter_Inventory.find((choosenItem)=> choosenItem.item ===obj)
-let choi = playerCharacter_Inventory.indexOf(obj)
-console.log(choi)
+
 obj.effect(playerCharacter.playerCharacter)
 // playerCharacter_Inventory.find()
 console.log(playerCharacter.playerCharacter)
