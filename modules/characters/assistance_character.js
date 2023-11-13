@@ -7,12 +7,12 @@ let assistance_Character = {
     // als callback playerchar.position ---- if event happened function without event else restart function
     position_inBattle: 1,
     //player condition
-    health_head: 10,
-    health_body: 10,
-    health_leftArm: 10,
-    health_rightArm: 10,
-    health_leftLeg: 10,
-    health_rightLeg: 10,
+    health_head: 100,
+    health_body: 100,
+    health_leftArm: 100,
+    health_rightArm: 100,
+    health_leftLeg: 100,
+    health_rightLeg: 100,
     get currentHealth() {
       return (
         this.health_head +

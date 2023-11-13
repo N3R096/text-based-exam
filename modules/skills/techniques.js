@@ -31,7 +31,7 @@ function Attack (target_, attacker_,index,order_,byPlayer_selectedTarget,Attacki
   if (attacker_.playableChar) {console.log(("trolololol"))
 console.log( `>>>>>>>>>>>>>>><
 `,attacker_.name,`attacked`,target_.name,`>>>>>>>>>>>>>>>>>>>>><<<<<<`)
-target_.HP-=200
+target_.HP-=60
 console.log(target_)} 
 
   
